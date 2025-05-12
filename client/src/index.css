@@ -1,0 +1,166 @@
+/* Import Leaflet CSS */
+@import '~leaflet/dist/leaflet.css';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f4f7f6;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* Basic App Layout */
+.app-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+
+/* Controls Styling */
+.controls {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background-color: #fdfdfd;
+}
+
+.controls p {
+    font-size: 0.95em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.controls label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: 600;
+    color: #444;
+    font-size: 0.9em;
+}
+ .controls label span {
+    display: block;
+    margin-bottom: 4px;
+ }
+
+ .controls input[type="number"],
+ .controls button {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    margin-right: 10px;
+    margin-bottom: 10px; /* Add space below inputs */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+ }
+
+ .controls input[type="number"] {
+     width: 120px; /* Adjust width as needed */
+ }
+
+ .controls button {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s ease;
+ }
+ .controls button:hover {
+    background-color: #2980b9;
+ }
+
+ .controls button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+ }
+
+ .results-info {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #eafaf1;
+    border: 1px solid #c3e6cb;
+    border-radius: 4px;
+    color: #155724;
+    font-size: 0.9em;
+ }
+ .results-info strong {
+    font-weight: 600;
+ }
+
+ .error-message {
+    color: #e74c3c;
+    margin-top: 15px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #fdedec;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+ }
+
+/* Map Styling */
+.leaflet-container {
+  height: 500px; /* Or adjust as needed */
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+/* Optional Results List Styles */
+.results-list {
+    margin-top: 20px;
+}
+
+.results-list h3 {
+    margin-bottom: 10px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.results-list ul {
+  list-style: none;
+  padding: 0;
+}
+.results-list li {
+  border-bottom: 1px solid #eee;
+  padding: 12px 5px;
+  font-size: 0.95em;
+}
+.results-list li:last-child {
+  border-bottom: none;
+}
+.results-list strong {
+    color: #27ae60; /* Green for price */
+    margin-right: 10px;
+}
+.results-list a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #3498db;
+    font-size: 0.9em;
+}
+.results-list a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,25 @@
+{
+  "short_name": "Cheaper Houses", // Short name for home screens
+  "name": "Cheaper Houses Finder App", // Full name of the application
+  "icons": [
+    {
+      "src": "favicon.ico", // Reference to the icon file
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png", // Reference to the 192px logo
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png", // Reference to the 512px logo
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".", // The starting URL when launched from installed state
+  "display": "standalone", // How the app should be displayed (like a native app)
+  "theme_color": "#000000", // Theme color for the browser UI
+  "background_color": "#ffffff" // Background color shown before the app loads
+}
